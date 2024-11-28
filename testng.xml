@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Core Suite">
+    <test verbose="2"  name="D:/Testing/TestNG/src/test/java/Core">
+        <classes>
+            <class name="Core.FirstTestCase">
+                <methods>
+                    <include name="openApp"/>
+                    <include name="login"/>
+                    <include name="logout"/>
+                </methods>
+            </class>
+            <class name="Core.OrangeHRMDemo">
+                <methods>
+                    <include name="openApp"/>
+                    <include name="checkIfLogoIsDisplayed"/>
+                    <include name="login"/>
+                    <include name="closeApp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
