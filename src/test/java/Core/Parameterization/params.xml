@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--
+        Thread Count:
+        1. TestNG allows running multiple tests concurrently using the `thread-count` attribute in
+           the `<suite>` tag of the TestNG XML file.
+        2. The `parallel="tests"` attribute specifies that the tests should be run in parallel, where
+           each `<test>` tag runs in its own thread.
+        3. The `thread-count` attribute determines the maximum number of threads TestNG can create to
+           execute tests in parallel. In the provided XML configuration, `thread-count="5"` means up to
+           five tests can execute simultaneously.
+        4. This is particularly useful for reducing test execution time, especially when testing
+           across multiple environments or browsers.
+        5. It's important to ensure thread safety when parallelizing tests, such as using separate
+           instances of `WebDriver` for each test thread.
+
+        By combining parameterization and multi-threaded execution, we can efficiently test
+        applications in various configurations and environments with minimal code duplication.
+-->
+
+<suite thread-count="5" parallel="tests" name="Browser Suite">
+    <test name="Test Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <!-- Add your classes here -->
+            <class name="Core.Parameterization.ParamBrowserDemo"/>
+        </classes>
+    </test>
+    <test name="Test Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <!-- Add your classes here -->
+            <class name="Core.Parameterization.ParamBrowserDemo"/>
+        </classes>
+    </test>
+</suite>
