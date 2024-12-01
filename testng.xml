@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Core Suite">
-    <test verbose="2"  name="D:/Testing/TestNG/src/test/java/Core">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="E:/projects/Testing/TestNG/src/test/java/Core/Annotations/AllAnnotations.java">
         <classes>
-            <class name="Core.FirstTestCase">
+            <class name="Core.Annotations.AllAnnotations">
                 <methods>
-                    <include name="openApp"/>
-                    <include name="login"/>
-                    <include name="logout"/>
-                </methods>
-            </class>
-            <class name="Core.OrangeHRMDemo">
-                <methods>
-                    <include name="openApp"/>
-                    <include name="checkIfLogoIsDisplayed"/>
-                    <include name="login"/>
-                    <include name="closeApp"/>
+                    <include name="test1"/>
+                    <include name="test2"/>
                 </methods>
             </class>
         </classes>

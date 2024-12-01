@@ -1,4 +1,4 @@
-package Core;
+package Core.Annotations;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
