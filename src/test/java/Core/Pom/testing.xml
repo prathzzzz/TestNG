@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="Test With Page Factory">
+        <classes>
+            <class name="Core.Pom.LoginTestWithPageFactory"/>
+            <!-- Add your classes here -->
+        </classes>
+    </test>
+
+    <test name="Test Without Page Factory">
+        <classes>
+            <class name="Core.Pom.LoginTestWithoutPageFactory"/>
+            <!-- Add your classes here -->
+        </classes>
+    </test>
+
+
+
+</suite>
